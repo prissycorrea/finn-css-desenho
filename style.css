@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #202020;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.head {
+    align-items: center;
+    background: #e5e5e5;
+    border-radius: 45% 45% 0 0/25% 25% 0 0;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+}
+
+.head::before, .head::after {
+    background: inherit;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.head::before {
+    border-radius: 50px 50px 0 0;
+    box-shadow: 300px 0 #e5e5e5;
+    height: 310px;
+    width: 100px;
+}
+
+.head::after {
+    background: #e5e5e5;
+    border-radius: 50%;
+    bottom: -40px;
+    height: 80px;
+    width: 400px;
+}
+
+.face {
+    align-items: center;
+    background: #e9bfb8;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    transform: translateY(10%);
+    width: 350px;
+}
+
+.eyes {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.eyes div {
+    background: black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.smile {
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 10px black;
+    height: 30px;
+    width: 120px;
+}
